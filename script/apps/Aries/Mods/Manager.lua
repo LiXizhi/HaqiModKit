@@ -3,6 +3,8 @@ NPL.load("(gl)script/ide/commonlib.lua")
 NPL.load("(gl)script/ide/Json.lua")
 NPL.load("(gl)script/ide/System/Plugins/PluginManager.lua")
 NPL.load("(gl)script/ide/Files.lua")
+NPL.load("(gl)script/apps/Aries/Mods/Updates.lua")
+local updates=MyCompany.Aries.HaqiModUpdates
 local Mods=commonlib.gettable("MyCompany.Aries.HaqiMods")
 local plugins=System.Plugins.PluginManager.CreateGetInstance("Haqi")
 local folder=ParaIO.GetWritablePath().."config/"
@@ -37,6 +39,15 @@ function Mods.List()
     end
     table.sort(rows,function(a,b) return a.id<b.id end)
     table.insert(rows,1,{id=official,title="彩虹衣柜 · 官方"})
+    for _,row in ipairs(rows) do
+        local m=updates.Local(row.id)
+        row.version=m.version or (row.id==official and "尚未下载" or "未声明")
+        row.title=m.name or (row.id==official and "彩虹衣柜" or row.id:gsub("%.zip$",""))
+        row.source=row.id==official and "官方" or "社区"
+        row.enabled=Mods.Enabled(row.id)
+        row.pending=m.pending
+        row.online=row.id==official or m.feed~=nil
+    end
     return rows
 end
 local function wardrobe()
@@ -89,6 +100,7 @@ function Mods.SetEnabled(name,value)
 end
 function Mods.EnterWorld()
     if world then return end
+    updates.ApplyPending()
     world=true
     local data=settings()
     local function enter(name)
@@ -108,10 +120,15 @@ function Mods.LeaveWorld()
     -- The shop can open before the first world callback.
     if not hadWardrobe and commonlib.getfield("MyCompany.Aries.HaqiShop.WardrobeChannel") then wardrobe().LeaveWorld() end
 end
+function Mods.RefreshView()
+    if Mods.page and Mods.page:IsVisible() then Mods.page:Refresh(0.05) end
+end
 function Mods.Open()
+    NPL.load("(gl)script/ide/System/Windows/Screen.lua")
+    System.Windows.Screen:Connect("sizeChanged",Mods,Mods.RefreshView,"UniqueConnection")
     System.App.Commands.Call("File.MCMLWindowFrame",{url="script/apps/Aries/Mods/Manager.html",
-        name="HaqiMods",app_key=MyCompany.Aries.app.app_key,zorder=360,enable_esc_key=true,text="Mod 管理",isShowTitleBar=false,style=CommonCtrl.WindowFrame.ContainerStyle,allowDrag=true,directPosition=true,align="_ct",
-        x=-245,y=-175,width=490,height=350,DestroyOnClose=true})
+        name="HaqiMods",app_key=MyCompany.Aries.app.app_key,zorder=360,enable_esc_key=true,text="Mod 管理",isShowTitleBar=false,style=CommonCtrl.WindowFrame.ContainerStyle,allowDrag=false,directPosition=true,align="_fi",
+        x=0,y=0,width=0,height=0,cancelShowAnimation=true,DestroyOnClose=true})
 end
 function Mods.Connect()
     if System.options.IsWebBrowser or System.os.GetPlatform()=="emscripten" then return "请在桌面客户端连接本机 AI" end

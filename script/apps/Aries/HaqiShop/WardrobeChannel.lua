@@ -9,6 +9,7 @@ local worldGeneration=0
 local origin = "https://cdn.keepwork.com/haqi/wardrobe/v1/"
 local cache = ParaIO.GetWritablePath().."temp/haqi-wardrobe/packages/"
 local pointer = cache.."installed.json"
+local prepared = cache.."prepared.json"
 local current, runtime, transfer, request
 local serial = 0
 
@@ -37,14 +38,47 @@ local function matches(path,d)
     return data and ParaMisc.sha1(data)==d.digest
 end
 
-local function remember(d)
-    local tmp = pointer.."."..ParaGlobal.GenerateUniqueID()
+local function remember(d,target)
+    target=target or pointer
+    local tmp = target.."."..ParaGlobal.GenerateUniqueID()
     local f = ParaIO.open(tmp,"w")
     if not f:IsValid() then return end
     local data = commonlib.Json.Encode(d)
     f:write(data,#data)
     f:close()
-    if not ParaIO.MoveFile(tmp,pointer) then ParaIO.DeleteFile(tmp) end
+    if not ParaIO.MoveFile(tmp,target) then ParaIO.DeleteFile(tmp);return false end
+    return true
+end
+
+-- Older channel manifests identify a build by its original ZIP digest.
+local versions={
+    c9c0b940bf3fa82d1156126f0c84517f7216ec0b="1.0.0",
+    ef957a20f7d3f2739f1602ed559e8c72a7138db1="2.0.0",
+    ["4e8d0ae82b074868f0d9756cf61c195eda58dd4b"]="2.1.0",
+    ["6a0b9819033be04215b2745b80281e41578b5e78"]="2.2.0",
+    c3569993e3647efc9c9033587b60cda6e64502f1="2.2.1"
+}
+function Channel.Release(path)
+    local d=descriptor(path)
+    if d then
+        d.version=type(d.version)=="string" and d.version:match("^%d+%.%d+%.%d+$") or versions[d.revision]
+        return d
+    end
+end
+function Channel.Installed()
+    return Channel.Release(prepared) or Channel.Release(pointer)
+end
+function Channel.UpdateSource()
+    return origin.."current.json"
+end
+function Channel.Prepare(d,tmp)
+    if d.minimum and not Gate.AtLeast(ParaEngine.GetVersion(),d.minimum) then return false,"请先更新客户端" end
+    if not matches(tmp,d) then return false,"更新包校验失败" end
+    ParaIO.CreateDirectory(cache)
+    local zip=cache..d.digest..".zip"
+    if not matches(zip,d) and not ParaIO.MoveFile(tmp,zip) then return false,"无法保存更新包" end
+    if not remember(d,prepared) then return false,"无法保存版本记录" end
+    return true,"已下载，下次打开衣柜时生效"
 end
 
 local function activate(d)
@@ -91,8 +125,9 @@ local function finish(d)
     request = nil
     if not caller or not caller.visible() then return end
     local previous = current or descriptor(pointer)
+    d=d or descriptor(prepared)
     if launch(d) then
-        remember(current)
+        if remember(current) then ParaIO.DeleteFile(prepared) end
         caller.status(L"可进入试衣间")
     elseif previous and (not d or previous.digest~=d.digest) and launch(previous) then
         caller.status(L"正在使用本机缓存版本")

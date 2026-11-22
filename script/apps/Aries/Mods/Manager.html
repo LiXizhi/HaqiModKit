@@ -1,41 +1,129 @@
-<html xmlns="http://www.w3.org/1999/xhtml"><body>
-<pe:mcml>
+<html xmlns="http://www.w3.org/1999/xhtml"><body><pe:mcml>
 <script type="text/npl"><![CDATA[
 local mods=MyCompany.Aries.HaqiMods
+local u=MyCompany.Aries.HaqiModUpdates
 local page=document:GetPageCtrl()
-function Close() page:CloseWindow() end
 local rows=mods.List()
-function Rows() return rows end
-function Paged() return #rows>4 end
-function Label(id) return mods.Enabled(id) and "停用" or "启用" end
+mods.page=page
+page.OnClose=function()
+    if mods.page==page then
+        mods.page=nil
+        u.onChange=nil
+        System.Windows.Screen:Disconnect("sizeChanged",mods,mods.RefreshView)
+    end
+end
+local root=ParaUI.GetUIObject("root")
+local _,_,w,h=root:GetAbsPosition()
+local compact=w<660
+local inset=compact and 12 or math.max(34,math.floor((w-1160)/2))
+local rowHeight=compact and 62 or 74
+local count=math.max(1,math.floor((h-251)/(rowHeight+1)))
+local pages=math.max(1,math.ceil(#rows/count))
+page.modIndex=math.min(page.modIndex or 1,pages)
+function Box() return string.format("width:%dpx;height:%dpx;background:Texture/whitedot.png;background-color:#f4f6f9;color:#213044;",w,h) end
+function Body() return string.format("margin-left:%dpx;margin-right:%dpx;",inset,inset) end
+function Header() return string.format("width:%dpx;height:72px;background:Texture/whitedot.png;background-color:#233e5c;",w) end
+function Wide() return not compact end
+function Col(kind)
+    local available=w-2*inset
+    local action=compact and 68 or 105
+    local status=compact and 0 or math.floor(available*.20)
+    local ver=compact and 77 or math.floor(available*.16)
+    local widths={name=available-action*2-status-ver,version=ver,status=status,action=action}
+    return string.format("float:left;width:%dpx;",widths[kind])
+end
+function HeadingStyle() return string.format("float:left;margin-left:%dpx;margin-top:16px;width:%dpx;font-size:26px;font-weight:bold;color:#ffffff;",inset,w-2*inset-34) end
+function Summary() return "我的 Mod ("..#rows..")" end
+function BarStyle() return string.format("float:left;width:%dpx;font-size:16px;font-weight:bold;color:#263a50;margin-top:5px;",w-2*inset-104) end
+function Rows()
+    local out={}
+    for i=(page.modIndex-1)*count+1,math.min(#rows,page.modIndex*count) do out[#out+1]=rows[i] end
+    return out
+end
+function TableHeader() return string.format("width:%dpx;margin-top:8px;height:29px;color:#566778;font-size:13px;background:Texture/whitedot.png;background-color:#eaf0f5;",w-2*inset) end
+function RowStyle() return "height:"..rowHeight.."px;background:Texture/whitedot.png;background-color:#ffffff;" end
+function Info(id) return u.State(id) end
+function RowStatus(row)
+    local state=Info(row)
+    if state.candidate and state.candidate.version then return state.text.." "..state.candidate.version end
+    return state.text or "未检查"
+end
+function Detail(id,source,enabled,pending)
+    local status=enabled and "已启用" or "已停用"
+    if compact then
+        local s=Info(id)
+        if pending then return status.." · 待重启" end
+        if s.text then return status.." · "..RowStatus(id) end
+    end
+    return source.." · "..status
+end
+function ToggleLabel(id) return mods.Enabled(id) and "停用" or "启用" end
+function ActionStyle(id)
+    local nextRelease=Info(id).candidate
+    local colors=nextRelease and "background-color:#386ca7;color:#ffffff;" or "background-color:#e6edf5;color:#355476;"
+    return "margin-top:17px;width:66px;height:30px;font-size:14px;background:Texture/whitedot.png;"..colors
+end
+function UpdateStyle(id)
+    local color=Info(id).candidate and "#285b94" or "#526477"
+    return "margin-top:19px;font-size:14px;color:"..color..";"
+end
+function ActionLabel(id,pending)
+    if pending then return "待重启" end
+    local s=Info(id)
+    if s.busy then return "处理中" end
+    if s.candidate then return id=="HaqiWardrobe" and s.text=="可下载" and "下载" or "更新" end
+    if id=="HaqiWardrobe" then return "检查" end
+    return "选取 ZIP"
+end
 function Toggle(id)
-    local ok,msg=mods.SetEnabled(id,not mods.Enabled(id))
-    page.notice=ok and "已保存本机设置" or tostring(msg or "加载失败")
+    local ok,why=mods.SetEnabled(id,not mods.Enabled(id))
+    u.notice=ok and "已保存本机设置" or tostring(why or "设置失败")
     page:Refresh(0)
 end
-function Guide() ParaMisc.CopyTextToClipboard(mods.guide);page.notice="开发指南链接已复制，可直接发给 AI";page:Refresh(0) end
-function Connect() page.notice=mods.Connect();page:Refresh(0) end
-function Refresh() page:Refresh(0) end
-function Notice() return page.notice or "" end
+function Action(id)
+    if u.Local(id).pending then u.notice="重启后使用已下载的版本";page:Refresh(0);return end
+    local s=Info(id)
+    if s.busy then return end
+    if s.candidate then u.Update(id,s.candidate);return end
+    if id=="HaqiWardrobe" then u.CheckAll({{id=id}});return end
+    NPL.load("(gl)script/ide/OpenFileDialog.lua")
+    local dialog=CommonCtrl.OpenFileDialog
+    local platform=System.os.GetPlatform()
+    local selectFile=platform=="win32" and dialog.ShowDialog_Win32 or platform=="mac" and dialog.ShowDialog_Mac
+    if selectFile then u.Import(id,selectFile({{"Mod ZIP","*.zip"}},"选取更新包")) else
+        u.notice="将新版 ZIP 放入 Mod/updates/，然后点击检查更新";page:Refresh(0)
+    end
+end
+function Check() u.notice=nil;u.CheckAll(mods.List()) end
+function Guide() ParaMisc.CopyTextToClipboard(mods.guide);u.notice="开发指南链接已复制";page:Refresh(0) end
+function Connect() u.notice=mods.Connect();page:Refresh(0) end
+function Close() page:CloseWindow() end
+function Notice() return u.notice or "安装社区 Mod 时，将 ZIP 放入 Mod 文件夹后点击检查更新。" end
+function Pages() return pages>1 end
+function PageText() return page.modIndex.." / "..pages end
+function Previous() page.modIndex=math.max(1,page.modIndex-1);page:Refresh(0) end
+function Next() page.modIndex=math.min(pages,page.modIndex+1);page:Refresh(0) end
+function Footer() return string.format("position:absolute;left:0px;top:%dpx;width:%dpx;height:82px;background:Texture/whitedot.png;background-color:#ffffff;",h-82,w) end
+u.onChange=mods.RefreshView
 ]]></script>
-<div class="window" style="width:490px;height:350px;">
-<div class="titlebar"><div class="windowlabel">Mod 管理</div><input type="button" class="closewindow" onclick="Close"/></div>
-<div class="clientarea" style="padding:12px;">
-    <div>把自己的 Haqi*.zip 放入客户端 Mod 文件夹，再点刷新。</div>
-    <div style="height:174px;margin-top:6px;">
-        <pe:gridview name="mods" DataSource="<%=Rows()%>" AllowPaging="<%=Paged()%>" pagesize="4" ItemsPerLine="1">
-            <PagerSettings Position="Bottom" PreviousPageText="上一页" NextPageText="下一页"/>
-            <Columns><div style="height:30px;">
-                <div style="float:left;width:305px;"><%=Eval("title")%></div>
-                <input type="button" name='<%=Eval("id")%>' value='<%=Label(Eval("id"))%>' onclick="Toggle" style="width:64px;"/>
-            </div></Columns>
-        </pe:gridview>
+<div style='<%=Box()%>'>
+  <div style='<%=Header()%>'><div style='<%=HeadingStyle()%>'>Mod 管理</div><input type="button" name="closeMods" value="×" tooltip="关闭" onclick="Close" style="float:left;margin-top:19px;width:32px;height:32px;background:Texture/whitedot.png;background-color:#385673;color:#ffffff;font-size:20px;"/></div>
+  <div style='<%=Body()%>'>
+    <div style="margin-top:24px;height:42px;"><div style='<%=BarStyle()%>'><%=Summary()%></div><input type="button" name="checkUpdates" value="检查更新" onclick="Check" style="width:104px;height:32px;font-size:14px;background:Texture/whitedot.png;background-color:#365f90;color:#ffffff;font-weight:bold;"/></div>
+    <div style='<%=TableHeader()%>'>
+      <div style='<%=Col("name")%>'><div style="margin-left:12px;margin-top:4px;">名称</div></div><div style='<%=Col("version")%>'><div style="margin-top:4px;">当前版本</div></div><pe:if condition='<%=Wide()%>'><div style='<%=Col("status")%>'><div style="margin-top:4px;">更新状态</div></div></pe:if><div style='<%=Col("action")%>'><div style="margin-top:4px;">操作</div></div>
     </div>
-    <input type="button" value="刷新列表" onclick="Refresh"/>
-    <input type="button" value="复制 AI 开发指南" onclick="Guide"/>
-    <input type="button" value="连接本机 AI" onclick="Connect"/>
-    <div style="margin-top:8px;"><%=Notice()%></div>
-</div>
-</div>
-</pe:mcml>
-</body></html>
+    <pe:repeat DataSource='<%=Rows()%>'><pe:repeatitem><div style='<%=RowStyle()%>'>
+      <div style='<%=Col("name")%>'><div style="margin-left:12px;margin-top:12px;font-size:17px;font-weight:bold;color:#1c2e40;height:22px;"><%=Eval("title")%></div><div style="margin-left:12px;margin-top:2px;font-size:13px;color:#627283;"><%=Detail(Eval("id"),Eval("source"),Eval("enabled"),Eval("pending"))%></div></div>
+      <div style='<%=Col("version")%>'><div style="margin-top:18px;font-size:15px;color:#31455a;"><%=Eval("version")%></div></div>
+      <pe:if condition='<%=Wide()%>'><div style='<%=Col("status")%>'><div style='<%=UpdateStyle(Eval("id"))%>'><%=Eval("pending") and ("待重启 "..Eval("pending")) or RowStatus(Eval("id"))%></div></div></pe:if>
+      <div style='<%=Col("action")%>'><input type="button" name='<%=Eval("id")%>' value='<%=ToggleLabel(Eval("id"))%>' onclick="Toggle" style="margin-top:17px;width:58px;height:30px;font-size:14px;background:Texture/whitedot.png;background-color:#edf1f5;color:#2e4259;"/></div>
+      <div style='<%=Col("action")%>'><input type="button" name='<%=Eval("id")%>' value='<%=ActionLabel(Eval("id"),Eval("pending"))%>' onclick="Action" style='<%=ActionStyle(Eval("id"))%>'/></div>
+    </div><div style="height:1px;background:Texture/whitedot.png;background-color:#dce3ea;"/></pe:repeatitem></pe:repeat>
+  </div>
+  <div style='<%=Footer()%>'><div style='<%=Body()%>'><div style="margin-top:8px;height:24px;font-size:13px;color:#506276;"><%=Notice()%></div>
+    <input type="button" value="复制开发指南" onclick="Guide" style="width:100px;height:30px;font-size:14px;background:Texture/whitedot.png;background-color:#e8edf2;color:#34485b;"/>
+    <input type="button" value="连接本机 AI" onclick="Connect" style="margin-left:8px;width:98px;height:30px;font-size:14px;background:Texture/whitedot.png;background-color:#e8edf2;color:#34485b;"/>
+    <pe:if condition='<%=Pages()%>'><input type="button" value="‹" onclick="Previous" style="margin-left:12px;width:25px;height:30px;font-size:14px;background:Texture/whitedot.png;background-color:#e8edf2;color:#34485b;"/><div style="float:left;margin:5px;"><%=PageText()%></div><input type="button" value="›" onclick="Next" style="width:25px;height:30px;font-size:14px;background:Texture/whitedot.png;background-color:#e8edf2;color:#34485b;"/></pe:if>
+  </div></div>
+</div></pe:mcml></body></html>
