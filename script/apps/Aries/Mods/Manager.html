@@ -1,0 +1,41 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><body>
+<pe:mcml>
+<script type="text/npl"><![CDATA[
+local mods=MyCompany.Aries.HaqiMods
+local page=document:GetPageCtrl()
+function Close() page:CloseWindow() end
+local rows=mods.List()
+function Rows() return rows end
+function Paged() return #rows>4 end
+function Label(id) return mods.Enabled(id) and "停用" or "启用" end
+function Toggle(id)
+    local ok,msg=mods.SetEnabled(id,not mods.Enabled(id))
+    page.notice=ok and "已保存本机设置" or tostring(msg or "加载失败")
+    page:Refresh(0)
+end
+function Guide() ParaMisc.CopyTextToClipboard(mods.guide);page.notice="开发指南链接已复制，可直接发给 AI";page:Refresh(0) end
+function Connect() page.notice=mods.Connect();page:Refresh(0) end
+function Refresh() page:Refresh(0) end
+function Notice() return page.notice or "" end
+]]></script>
+<div class="window" style="width:490px;height:350px;">
+<div class="titlebar"><div class="windowlabel">Mod 管理</div><input type="button" class="closewindow" onclick="Close"/></div>
+<div class="clientarea" style="padding:12px;">
+    <div>把自己的 Haqi*.zip 放入客户端 Mod 文件夹，再点刷新。</div>
+    <div style="height:174px;margin-top:6px;">
+        <pe:gridview name="mods" DataSource="<%=Rows()%>" AllowPaging="<%=Paged()%>" pagesize="4" ItemsPerLine="1">
+            <PagerSettings Position="Bottom" PreviousPageText="上一页" NextPageText="下一页"/>
+            <Columns><div style="height:30px;">
+                <div style="float:left;width:305px;"><%=Eval("title")%></div>
+                <input type="button" name='<%=Eval("id")%>' value='<%=Label(Eval("id"))%>' onclick="Toggle" style="width:64px;"/>
+            </div></Columns>
+        </pe:gridview>
+    </div>
+    <input type="button" value="刷新列表" onclick="Refresh"/>
+    <input type="button" value="复制 AI 开发指南" onclick="Guide"/>
+    <input type="button" value="连接本机 AI" onclick="Connect"/>
+    <div style="margin-top:8px;"><%=Notice()%></div>
+</div>
+</div>
+</pe:mcml>
+</body></html>

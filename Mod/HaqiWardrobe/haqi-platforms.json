@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "asOf": "2026-11-22",
+  "web": "官网最新体验入口",
+  "windows": "官网可下载 · 安装器 1.2.268",
+  "mac": "开发版已验证 · 官网暂无下载",
+  "android": "官网可下载 · 1.12（构建号 16）",
+  "ios": "官网暂未列出公开版本",
+  "downloads": {
+    "windows": "https://cdn.keepwork.com/haqi/HaqiInstaller_2026-07-02.exe",
+    "android": "https://cdn.keepwork.com/dist/haqi/maseai-v1.12-16-20260414-1723-haqi-release.apk"
+  }
+}

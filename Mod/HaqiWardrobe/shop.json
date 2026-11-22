@@ -1,0 +1,310 @@
+{
+  "frame": "714845295553ab3bb94887c4cf4d5ac7e1327403.png",
+  "items": [
+    {
+      "id": "deepseek-whale-maid",
+      "title": "蓝鲸女仆",
+      "note": "海蓝长发、白色围裙，背后藏着一条鲸尾。",
+      "cards": {
+        "set": "0f217c86ce0bc8084d1c9b03d335b504b718aa99.png",
+        "top": "f54a76368722bd51a4075528c85abf250bf6fa43.png",
+        "lower": "8d1c85ee6c515193302cf79bee3fd1721afc1439.png",
+        "shoes": "62e3ed864941408a6fac7a08c1842232acc56ef1.png",
+        "head": "7a8fbe29dc8b3cd41ef11f4efca18d31f546ddf7.png",
+        "back": "c37ac51a81f3aea3209df2ac400797ce00dcb82c.png",
+        "trim": "0420da38562ba13d94e1b9d01b6cb42bbed5b1b4.png"
+      }
+    },
+    {
+      "id": "honey-post",
+      "title": "蜜蜂邮差",
+      "note": "蜂蜜色短夹克，配上透明小蜂翼。",
+      "cards": {
+        "set": "b8f2e6567c6be8a35c6318c148b1287bad341233.png",
+        "top": "0e43d731cfc7904866f57be995418fce6b574ec4.png",
+        "lower": "263a8c23bc591afe4216ff1f7826498b6352913a.png",
+        "shoes": "584e27c43535254523c87fde177a3e91013fd542.png",
+        "head": "77fec96976890db647e6eecbeca02bbcfaf5f51c.png",
+        "back": "66ab82dfeac2809a3ea72aa93a8ea584933f194a.png",
+        "trim": "d35255537e3446484d0a4bd3bf12a6357c5507bc.png"
+      }
+    },
+    {
+      "id": "moon-moth",
+      "title": "月光飞蛾",
+      "note": "把月光别在衣领，让星屑绕着蛾翼飞。",
+      "cards": {
+        "set": "c510dbee37522a1304eb428ac213024cb3a928a6.png",
+        "top": "9a25dca534423d8549c9be998c8578db564c5c25.png",
+        "lower": "5649a407101c404b572c52fab710024c094de90d.png",
+        "shoes": "774834fb9ff352d0f7bbc28c6a55978a31506595.png",
+        "head": "4a4b253e58515ac9e4d885e1cbab5e2f15ec9a57.png",
+        "back": "866af2e3ac9d8dd5701be2bd5e82b251adf2681f.png",
+        "trim": "c0bc5ab4f5fe915456f570fa38114449c58633db.png",
+        "effect": "ef41479d7c4eb8d0d89aab44259cebd62e2b5db7.png"
+      }
+    },
+    {
+      "id": "berry-sorbet",
+      "title": "莓果奶霜",
+      "note": "奶油色裙摆，藏着一抹草莓红。",
+      "cards": {
+        "set": "cf93aff4b8aa502b52cfec2a89e84d6b8f12ebc2.png",
+        "top": "a794bff747f3d89c937592cca222eea14f1e170d.png",
+        "lower": "eda81726c16917edb58f80e5d41ffadc245bc75d.png",
+        "shoes": "8e8444ee56c6a9f39d405c927393722175e0dbbf.png",
+        "head": "a26e7ab84eb337ead33d7c99b1ac13e8b0a87e50.png",
+        "back": "a508b6d247fe35ab46782ef2dce4a8cad742a62e.png",
+        "trim": "b362467fc76dc5e5ef62c2d1a9ff3d21903b588b.png"
+      }
+    },
+    {
+      "id": "koi-courier",
+      "title": "锦鲤信使",
+      "note": "朱红鱼鳞纹，转身可见一尾锦鲤。",
+      "cards": {
+        "set": "fb9d8d879388c7220ab4dfba033975445ecf1b9a.png",
+        "top": "033668298d5fd29d380506bfddef964c20f94383.png",
+        "lower": "ee25c2fed94bf4c9f9eba476433fa22543b259cb.png",
+        "shoes": "50c93d7d30ee367e769a59b1bc9d9b0102c6859b.png",
+        "head": "ae43c5140abaa7d50dca50811a9fb53d297dfab6.png",
+        "back": "cc522d6e760ae195e5857d7c99f69abf07469709.png",
+        "trim": "4509787bf6beb28c71b8c904e86eff1897ce5a34.png"
+      }
+    },
+    {
+      "id": "cloud-shepherd",
+      "title": "云朵牧歌",
+      "note": "把软绵绵的云披在肩上。",
+      "cards": {
+        "set": "dd75bceff51df40368aad77738092385e2250393.png",
+        "top": "56d950fa8952b0d5b06bd3bfd3ae8106c6e416fd.png",
+        "lower": "0db02e6be2bcac79ff5fbcca009f6b6235879759.png",
+        "shoes": "acc4903068e9e5e0ca67d859a146b271bd20ca94.png",
+        "head": "32057fc885ffc011c3bce4abec6d19ed1e608465.png",
+        "back": "37495a9ebe6235e9b637e401744e68c76521efd7.png",
+        "trim": "64f75d3300a2d4cd83c193a6b2a80e5486381eca.png"
+      }
+    },
+    {
+      "id": "briar-botanist",
+      "title": "蔷薇园丁",
+      "note": "叶脉与枝条，是小园丁的随身标本。",
+      "cards": {
+        "set": "54d8e87f72fcf3ef0332e348820d4f29df7666a7.png",
+        "top": "80e82e18b04c2d8257dc299dfad474645b817c79.png",
+        "lower": "3e70df8c817f8966779200d45e6e4f732d79c3bf.png",
+        "shoes": "b311c5bc375ce44309768e05f4d1a18f26fc8268.png",
+        "head": "b2dabd4bb9874920fa493f09c914d12fe8bff6da.png",
+        "back": "3845300e604654a0b94bfe62e7a46045c6c71e0d.png",
+        "trim": "d6fcf53df262cbec6dcbafb5a66d8b17656e8533.png"
+      }
+    },
+    {
+      "id": "clockwork-finch",
+      "title": "发条金雀",
+      "note": "黄铜机械翅，配一副飞行护目镜。",
+      "cards": {
+        "set": "9f094718adf08222f092e9674f355c532c58eb13.png",
+        "top": "c86112f6240d215124eeceefeecae04dd292d579.png",
+        "lower": "5b3216df8c0d1bbade9d32f87dc47f84625e6470.png",
+        "shoes": "50a55acb05b5640fc8c0aec2fe7ac79069ae6ae0.png",
+        "head": "6774d399338308163ca400c0f1d7182bdda12098.png",
+        "back": "4491321694ada43a82b8d76311a846ee71cbe5f7.png",
+        "trim": "74a9d5ab11ba877a088e8ef6202dd600026b20cb.png"
+      }
+    },
+    {
+      "id": "snowbell",
+      "title": "雪铃舞曲",
+      "note": "冰晶落在裙摆，雪光绕身轻舞。",
+      "cards": {
+        "set": "febfbf6b3db9cb83b4e5e9a6019ef0e356c9aa2f.png",
+        "top": "9a90e62cfe95d1f4c12feb7bb13dfda448b3b19b.png",
+        "lower": "918ad9b5dc2f08bdcaa17a1336b7c6db3dd39090.png",
+        "shoes": "acaae23b5c4bdbfa54b753c6123d60be4c60fe4e.png",
+        "head": "028081b67d1229b8627aaca134c7b12d84271735.png",
+        "back": "2be0bb0716f8979a46ee030a68877beb60ec366e.png",
+        "trim": "82f86aaa02bdbc5c2d15202d530b02e8b5f1ec87.png",
+        "effect": "8e52fe9db336415360972e83dc8c9bc4eed504a9.png"
+      }
+    },
+    {
+      "id": "inkcap-scholar",
+      "title": "蘑菇学者",
+      "note": "蘑菇小帽与随身书册。",
+      "cards": {
+        "set": "892ac8dd344d2e95d00abe11f0d0b8a0dc272ad3.png",
+        "top": "d2d6c02f86207180fe9bb2657a9b9a801451ef2f.png",
+        "lower": "1ec79b0aac7d4c992d523e615e112dfc7f659f23.png",
+        "shoes": "e3b3fdc585968bc282c21d1b5f6a28e51114b764.png",
+        "head": "d7cfed03c37bb8e204a7b904a55c1b3666c82754.png",
+        "back": "e0ef5cd1435c1a58fca40c64b852ef09c9599de9.png",
+        "trim": "c100bb7852fe35320472f0fa281a1016c2a579d4.png"
+      }
+    },
+    {
+      "id": "prism-regent",
+      "title": "棱镜之冠",
+      "note": "折光的晶翼上，浮动着细碎光点。",
+      "cards": {
+        "set": "9d8ca044d36b04824422520eda0399dab57e1459.png",
+        "top": "c0840cab7d5f455f252b698717b97835362ea9a7.png",
+        "lower": "e84d7ecbb3452e91a1dc9a58b8bee0d181236360.png",
+        "shoes": "7ba5b43763410aaef519c2dc637e4ed545870889.png",
+        "head": "201e5793543eb7ec57b1afe66febc87371aeb51e.png",
+        "back": "8890a13a9135375f2edafad0dc440ecc2d8ce64f.png",
+        "trim": "87303b0f33720717689ab68297ae5730cde75f66.png",
+        "effect": "3644210d34e7d37c702019f9527fcfe7ab0489db.png"
+      }
+    },
+    {
+      "id": "orbit-cadet",
+      "title": "星轨学员",
+      "note": "橘色飞行服与迷你卫星背饰。",
+      "cards": {
+        "set": "58b6209e264bb001d1f78752a3ab430c7b85468e.png",
+        "top": "87b29d2018d4aaa3caf715533efec15a9751e8bd.png",
+        "lower": "c86059ef476882bfd5b06fa8de8833083a06d5e0.png",
+        "shoes": "fa93866facc26befe5504f66c1c2e1a08b75b9e0.png",
+        "head": "4b27bacc654fb881d26d604af1b517ae8de60ffa.png",
+        "back": "a3ceebdbdadec4b80dd8bc3a43a286ebcd905d5a.png",
+        "trim": "9cf932cdca660e1fb4846d0e66b0cdccda19a194.png"
+      }
+    },
+    {
+      "id": "sakura-letter",
+      "title": "樱花来信",
+      "note": "花瓣落在和风衣襟和折扇上。",
+      "cards": {
+        "set": "61985a04ec664177f79000fb78cda071bf7a59ce.png",
+        "top": "5fb687dc499988dcd887e7f5dc98fe05f5299e6b.png",
+        "lower": "90f09b28734b30682cb96fe11263635331ebc113.png",
+        "shoes": "55e33acd8c53c518a345ff7a2377a0c64e8f91b6.png",
+        "head": "635852ce664fb329d4aab9eb408fe2180ab5173e.png",
+        "back": "bd955c708fca31edb56e807cc1c99fc25f990878.png",
+        "trim": "bc59f91ea8fde01ce674cf77bbcaf3c5deb23ad9.png"
+      }
+    },
+    {
+      "id": "lantern-keeper",
+      "title": "提灯人",
+      "note": "披上深青色的夜，带一盏灯。",
+      "cards": {
+        "set": "2d5949d8ec3d4131a3574c5c2e592bafeaf2b1b6.png",
+        "top": "fdd6619c6dbffe5df350183578a9117fe5dd46ea.png",
+        "lower": "8810db1aa9d33cfc67f9087969f0f43bdc898f51.png",
+        "shoes": "43ca95622588c3cb979da5abc951adca4afef1ec.png",
+        "head": "cfce4a510b7261d846757c7f4c302a140e829275.png",
+        "back": "a018e774534682ab168d51de21cb035ace37309a.png",
+        "trim": "d2e1892c6ce5e7c423d6cbf503cb8e7fd1dfe4eb.png"
+      }
+    },
+    {
+      "id": "tide-conductor",
+      "title": "潮汐乐手",
+      "note": "珊瑚与贝壳谱成海边的乐章。",
+      "cards": {
+        "set": "fae60fcc1f648af80cb165b7d4032372ae114ab8.png",
+        "top": "c092bde6a9e537c8274c7500b54d71bad834e099.png",
+        "lower": "d0d644aadbd65077a353ee631c9ef1d4437ff7cf.png",
+        "shoes": "89ec720d742d6a010e330453a798d7df48f938e1.png",
+        "head": "94324e9b9db05c6b0ea6007dbc3be6056ea1a4cf.png",
+        "back": "36ff1ec8abd162a625ca8292b852ecebda2b2529.png",
+        "trim": "28ae719d240903acf956602aa731e9d3940e29ef.png"
+      }
+    },
+    {
+      "id": "pumpkin-page",
+      "title": "南瓜侍童",
+      "note": "熟透的南瓜与蜷曲的藤蔓。",
+      "cards": {
+        "set": "86d0e30644eec123ecc7d7a54b9d6f1f7df3e20d.png",
+        "top": "cd2ce83a7567c1e7904ae6701a926d17f9d4bd68.png",
+        "lower": "d47f1a1feed898e3a06e5948d134d5e45b226601.png",
+        "shoes": "d7a8573a2d79d616e2c61cfbbf29fa9674d1fd4d.png",
+        "head": "fc3b4e39e2952622b1cf277cd2a3ce0b93f9bafb.png",
+        "back": "605830570b6e82bb73e0ece0cc87b44d86ea274a.png",
+        "trim": "5ee89659e9b4deb8eded5b48f36f21c3a21ccf80.png"
+      }
+    },
+    {
+      "id": "kitewright",
+      "title": "风筝匠",
+      "note": "纸鸢背上身，把风留在衣角。",
+      "cards": {
+        "set": "472553667ce8cb9d90ffefc3a00bc52a1bcee0ec.png",
+        "top": "7dedf38a5fc0cf647208cfd7aa844c30fa22cc24.png",
+        "lower": "eee5b98145aaf517e014774a4e5c30ea466ee536.png",
+        "shoes": "c8b9e04a4448c8039878be2e09fa62a20c0c7426.png",
+        "head": "aa226b92b42d00500f30cb14cad49e7c2122f7a5.png",
+        "back": "791d29b6026fdcdcb2b43938f9d4a14b1cb77ad4.png",
+        "trim": "054f15f96980f5719cdd75e4c8899e2ba8670dc8.png"
+      }
+    },
+    {
+      "id": "lemon-fizz",
+      "title": "柠檬汽水",
+      "note": "柠檬切片与冒泡的夏日汽水。",
+      "cards": {
+        "set": "6045f67f2fd645069900f8101c9da19e22b4a1cc.png",
+        "top": "bf206eeab46b42ce8f2fa48e76a0d2e3e504ba78.png",
+        "lower": "101911ed68cc8a041e148162cbd06cb162868e9e.png",
+        "shoes": "64dcfd9053208e84e78ab99b5b8a558d73408c43.png",
+        "head": "0abd63475a37588f5333c494e9eb8f1c3bdceecd.png",
+        "back": "b2c5f6bdb7082177079a9b3fc99c331d050dcca7.png",
+        "trim": "33e31f35b0220d9c01c4bdf1ef1ade98a1c1bc8b.png"
+      }
+    },
+    {
+      "id": "velvet-jester",
+      "title": "丝绒小丑",
+      "note": "菱格纹与舞台上跳动的绒球。",
+      "cards": {
+        "set": "339d96acffcf7f834616d2d5dfd573099c316c2f.png",
+        "top": "f7a6b2bfb19cc1c2741b00ea6d88febac8f28d69.png",
+        "lower": "469b9fa2b8fda16cf824d13ba443b16dab9e5acb.png",
+        "shoes": "8bd65f34469ce394f6b08b6be2f1c2445f7d2114.png",
+        "head": "1f0e527b43c5e1b01218ea71381aa039e622ed06.png",
+        "back": "a1a573adc68373c75cd53c922b2cf69d612c12b3.png",
+        "trim": "5026140c2ea10fb461b771e380d358c1e1782f86.png"
+      }
+    },
+    {
+      "id": "desert-stargazer",
+      "title": "沙丘观星者",
+      "note": "在暖沙色的衣褶间寻找星图。",
+      "cards": {
+        "set": "8e4e34687150afddbf9544227a89d9ab0ddd5b36.png",
+        "top": "ec6a2499b886d8fca909896e03937172c5f4a83c.png",
+        "lower": "9cd46e833258020d8389518733b98080f7304771.png",
+        "shoes": "7abceffb7d457383cd11c6d2b101190dceb7ecc7.png",
+        "head": "a0dfbe881cc66e48eb17653335f4e704c6fb220e.png",
+        "back": "96bef30573fcd4c380b654d4f48a19c55762bd80.png",
+        "trim": "c83d16f07061489c90df335ee5e1a727bd043f2c.png"
+      }
+    },
+    {
+      "id": "aurora-weaver",
+      "title": "极光织梦",
+      "note": "把极光的色彩织成一双翅膀。",
+      "cards": {
+        "set": "55fe16d8097d1ce99a82ab20d3f74033d4df51c0.png",
+        "top": "cbbf030da2a6c67066f6c1bd9acbb65407619db5.png",
+        "lower": "ea8f8b3dedf664f35bb14fba19bd6c8832aa44e6.png",
+        "shoes": "fd8c9807f9900d5bc0fb23f541352ca8790053fe.png",
+        "head": "b51b8bf0de571efe6649f86cd8961cfe2ebf8786.png",
+        "back": "90d58b1f97f85e7ffa0d4af3e718dc450b3802bd.png",
+        "trim": "91c4d34c6f3cf9745505b9d0e69a3cde9e780dc3.png",
+        "effect": "aa66e8a0551f38827eb64df6ab5b081eb60969ca.png"
+      }
+    }
+  ],
+  "chrome": {
+    "green": "4b37a7583685f2814df10a52db663069f08fe656.png",
+    "cream": "13871436fa96571d11337812d6fb70fb33c6cb41.png",
+    "sage": "209be0e8daf1bfab4dbdce03fe5102c03883af6a.png",
+    "active": "532596801e7296619672446aca583b6175a03cdd.png",
+    "coral": "285b1bf33de13a60cd309144138d4460252d077a.png"
+  }
+}

@@ -1,0 +1,1298 @@
+{
+  "version": 2,
+  "base": "https://cdn.jsdelivr.net/gh/LiXizhi/HaqiWardrobe@d270c36b55e5c0fc9c6e0d29117515eab12fe517/cdn/",
+  "looks": [
+    {
+      "id": "honey-post",
+      "name": "Honeybee Post",
+      "model": "character/v3/Elf/Female/ElfFemale.xml",
+      "colors": [
+        "#f5b82d",
+        "#302c41",
+        "#fff1b7",
+        "#a5e9e9",
+        "#a86c35"
+      ],
+      "hideSlots": [
+        0,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        26,
+        28
+      ],
+      "geosets": {
+        "8": 8,
+        "9": 1,
+        "5": 3
+      },
+      "atlas": "c33e803e48c07a0f4e377e19354e04d268a6baab.png",
+      "attachments": [
+        {
+          "socket": 11,
+          "group": "head",
+          "asset": "c547349969e3221bc32e2f5e517f684da74397cb.glb"
+        },
+        {
+          "socket": 15,
+          "group": "back",
+          "asset": "128e567bff775c457671de08d5b5cdb92aeb1ac2.glb"
+        },
+        {
+          "socket": 15,
+          "group": "trim",
+          "asset": "151de35b2fb17f10d5afb44efc50b5011bd231fa.glb"
+        }
+      ]
+    },
+    {
+      "id": "koi-courier",
+      "name": "Koi Courier",
+      "model": "character/v3/Elf/Female/ElfFemale.xml",
+      "colors": [
+        "#ec583e",
+        "#163e59",
+        "#fff0d1",
+        "#f5af36",
+        "#243447"
+      ],
+      "hideSlots": [
+        0,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        26,
+        28
+      ],
+      "geosets": {
+        "8": 8,
+        "9": 3,
+        "5": 1
+      },
+      "atlas": "29934986a5ea4deb9718b574503fb152899f9d0d.png",
+      "attachments": [
+        {
+          "socket": 11,
+          "group": "head",
+          "asset": "b44b77ca241d15de341e8b45f028cedab45eada1.glb"
+        },
+        {
+          "socket": 15,
+          "group": "back",
+          "asset": "dce94848e8cdc132010d2180b1c0998753b5426a.glb"
+        },
+        {
+          "socket": 15,
+          "group": "trim",
+          "asset": "802afd4da0d005ad72b5e541a024cf3a35f5a780.glb"
+        }
+      ]
+    },
+    {
+      "id": "cloud-shepherd",
+      "name": "Cloud Shepherd",
+      "model": "character/v3/Elf/Female/ElfFemale.xml",
+      "colors": [
+        "#9cc9ec",
+        "#475394",
+        "#fff6e6",
+        "#e7ad93",
+        "#a9bacb"
+      ],
+      "hideSlots": [
+        0,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        26,
+        28
+      ],
+      "geosets": {
+        "8": 16,
+        "9": 6,
+        "5": 7
+      },
+      "atlas": "d4a8a3ef2ac152e3845482b80eddd47220a36d51.png",
+      "attachments": [
+        {
+          "socket": 11,
+          "group": "head",
+          "asset": "95694631309600d3500840c32e3d5b0b0acc81da.glb"
+        },
+        {
+          "socket": 15,
+          "group": "back",
+          "asset": "2361611f3594eb1868e70532e3ec42644296774a.glb"
+        },
+        {
+          "socket": 15,
+          "group": "trim",
+          "asset": "1db522e4bee61119c877a2ac9f04317b0a3dabf0.glb"
+        }
+      ]
+    },
+    {
+      "id": "briar-botanist",
+      "name": "Briar Botanist",
+      "model": "character/v3/Elf/Female/ElfFemale.xml",
+      "colors": [
+        "#598a55",
+        "#234c4b",
+        "#ffecc3",
+        "#ff8c83",
+        "#673e39"
+      ],
+      "hideSlots": [
+        0,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        26,
+        28
+      ],
+      "geosets": {
+        "8": 16,
+        "9": 3,
+        "5": 5
+      },
+      "atlas": "dcd4ec9888f9efe86145c70f6b0121a3b0d48777.png",
+      "attachments": [
+        {
+          "socket": 11,
+          "group": "head",
+          "asset": "e6dad0b07c36a220ef5392d46021cf408178a7cb.glb"
+        },
+        {
+          "socket": 15,
+          "group": "back",
+          "asset": "90385e57a1c7865ed1aa6988d56215bb8c27c8a6.glb"
+        },
+        {
+          "socket": 15,
+          "group": "trim",
+          "asset": "e158ca98971affd0974ebc22f481bfee39ad89d1.glb"
+        }
+      ]
+    },
+    {
+      "id": "moon-moth",
+      "name": "Moon Moth",
+      "model": "character/v3/Elf/Female/ElfFemale.xml",
+      "colors": [
+        "#7873b7",
+        "#292b5a",
+        "#dff5d9",
+        "#eccb80",
+        "#40406b"
+      ],
+      "hideSlots": [
+        0,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        26,
+        28
+      ],
+      "geosets": {
+        "8": 1,
+        "9": 6,
+        "5": 7
+      },
+      "atlas": "0ce06ebd08369475a9b05645fded2b19c29b5f9b.png",
+      "attachments": [
+        {
+          "socket": 11,
+          "group": "head",
+          "asset": "bb7fb72c95ec909771caf7e811732e292a7c0062.glb"
+        },
+        {
+          "socket": 15,
+          "group": "back",
+          "asset": "33f87a0a9daec2ea56306d2398194215603845d1.glb"
+        },
+        {
+          "socket": 15,
+          "group": "trim",
+          "asset": "688923d244ba5f3e33d07c624511ae5a44ea779b.glb"
+        },
+        {
+          "socket": 15,
+          "group": "effect",
+          "period": 2.8,
+          "phase": 0.0,
+          "frames": [
+            "a8053773b32d41a91ec586b88224afafce069ccf.glb",
+            "ff12eb8a22b284779f6a2950ad4e8cd76c6f5b58.glb",
+            "9564fdcf8641b951d40172a42b04135a5f759bc1.glb",
+            "b982e4b390881657e42fa3fefe95d8d5c7ad2b44.glb",
+            "3765c27eaa79d7c4afdb1b05d800c5f982b64ba5.glb",
+            "b040f15fb90232fed9e04def74c07e1337d1ece2.glb",
+            "2e5c4d84a2ab98ed9728ef6cda25139c28f3b9f6.glb",
+            "5a8bd441569521ec4447a15a633244c4728dbf17.glb",
+            "97c1a4e9f9b386fe023311052bf75b1b4c250935.glb",
+            "231c52a174abf9fd8a094a24c65686e9395bc9fc.glb",
+            "91f711da64d6ee9ea34f8ec60aaa0594a886a347.glb",
+            "ed9e9d5c07db23c5d592701a46b5d24ce1dbb394.glb"
+          ]
+        },
+        {
+          "socket": 15,
+          "group": "effect",
+          "period": 2.8,
+          "phase": 0.3333333333333333,
+          "frames": [
+            "1de0df554df6e1e71a19941d19f70f48087259de.glb",
+            "086ab806f6bfbd4ed04ddf38a6b5f628661bf565.glb",
+            "37dca08e866275c212ff9f9030b5b4f153e8afac.glb",
+            "fefa965b1543e78f76fd994ec0528f4db521956d.glb",
+            "dbd7b05c97377b8b59a4646722a0ada2f9247677.glb",
+            "9ecae56a18253bc8029e32af7241c88746929323.glb",
+            "b095872d5f52a9186e7f297856ecdecdf8f1d645.glb",
+            "4f95f1157bb618ae101850c30758f14052d0b51e.glb",
+            "74131cfc86d9e335e24db2bd0f0ed94b5db3e857.glb",
+            "70a5aa3d767fb56422b3d4cd4395f961a1e16be6.glb",
+            "9dba1fc298d8e7a12e6206b2d71945d538c3deff.glb",
+            "fcd5e96191db4fe530e76180e7c723cd0b9bb3ae.glb"
+          ]
+        },
+        {
+          "socket": 15,
+          "group": "effect",
+          "period": 2.8,
+          "phase": 0.6666666666666666,
+          "frames": [
+            "a28093c8ef11f2ff59a1b24b5b09e22ed972f09a.glb",
+            "ef72dbaf15633f07f6353c9b2de43dd7f14aa129.glb",
+            "0ae774ed01ea540cbd88ea9b2231b1829ac50008.glb",
+            "aef943d8827ce783fdc4311095f4f83385f5b8cc.glb",
+            "d83961e606e892db742370ac28fb57f43d0e0078.glb",
+            "9430d472db2cefb3bcaf9bfd630697afbbe7326b.glb",
+            "4863a4d0976ef7d19e2984de1a24fb046955ae8c.glb",
+            "1914af41f702a6f61213dad5901590440eab7a26.glb",
+            "2333132f7e737b48ff91ee42f4888331a9249c27.glb",
+            "374288d89c787461db7c6b30d71e15e708f23e14.glb",
+            "e9ba9ce60165932abe9e9bbab745cdf0e7e0fd82.glb",
+            "8ad90467a8633815b43410ab629638ea9ea2a832.glb"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "berry-sorbet",
+      "name": "Berry Sorbet",
+      "model": "character/v3/Elf/Female/ElfFemale.xml",
+      "colors": [
+        "#f197b2",
+        "#ba3d64",
+        "#fff2cf",
+        "#91bba3",
+        "#7f473c"
+      ],
+      "hideSlots": [
+        0,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        26,
+        28
+      ],
+      "geosets": {
+        "8": 16,
+        "9": 6,
+        "5": 3
+      },
+      "atlas": "e082918aa7953696e4e84b98d197c55844a4837c.png",
+      "attachments": [
+        {
+          "socket": 11,
+          "group": "head",
+          "asset": "5b9720f270212c35095d3f42bfcfcb2b100891e7.glb"
+        },
+        {
+          "socket": 15,
+          "group": "back",
+          "asset": "0ab53e81195803496f37e5700130f6bd0b2f081e.glb"
+        },
+        {
+          "socket": 15,
+          "group": "trim",
+          "asset": "f9b45b5483b37fe8388cc00bdd0b752319e76a3d.glb"
+        }
+      ]
+    },
+    {
+      "id": "prism-regent",
+      "name": "Prism Regent",
+      "model": "character/v3/Elf/Female/ElfFemale.xml",
+      "colors": [
+        "#399ca7",
+        "#394172",
+        "#ddfaf4",
+        "#f5c76d",
+        "#c1d4e6"
+      ],
+      "hideSlots": [
+        0,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        26,
+        28
+      ],
+      "geosets": {
+        "8": 1,
+        "9": 6,
+        "5": 7
+      },
+      "atlas": "9ab061290ee73070331f0d94ba6597bae438d49b.png",
+      "attachments": [
+        {
+          "socket": 11,
+          "group": "head",
+          "asset": "57afcd80bdc586cf8fb474fcab16b498b612e316.glb"
+        },
+        {
+          "socket": 15,
+          "group": "back",
+          "asset": "d72fb0001e9a777f2e24b6a30b8d77a1bec4ca59.glb"
+        },
+        {
+          "socket": 15,
+          "group": "trim",
+          "asset": "54cdb0137f2d851836ce52221d6184b81dd0bcfd.glb"
+        },
+        {
+          "socket": 15,
+          "group": "effect",
+          "period": 2.8,
+          "phase": 0.0,
+          "frames": [
+            "6c87c181208a685ef8c39990037750f9339d53f9.glb",
+            "9435a2695c437fc4eb5004980edac41881f2d3d3.glb",
+            "24c5674d4a2e088ccf17335cb086a7fbd51d194c.glb",
+            "6d909035b9afdc287394bf9cec43aa4f204f9bd9.glb",
+            "e70720bc15d6c2199dbe5005693d18c61df30427.glb",
+            "245991e3d50e836f6cac5eb71eedf97603fe03c1.glb",
+            "5501d9415874c487245d78a7b866df40608832e0.glb",
+            "3198ca8259f2cb17d7eff3d563850d79980f9dae.glb",
+            "45a732084bb0c4e5cfe268a55ab9a275780ab128.glb",
+            "5e3c7249f5ef10c585bcbd48d5f3c305a07291ce.glb",
+            "49c3394bbf69dc7808c56d7785176802a41d0d43.glb",
+            "5e1f5a7546ba514e018b66647a6dcdd7a54ddfdc.glb"
+          ]
+        },
+        {
+          "socket": 15,
+          "group": "effect",
+          "period": 2.8,
+          "phase": 0.3333333333333333,
+          "frames": [
+            "5200d4ba38a9de172d24637c56f550017e9ac3dc.glb",
+            "baefd568cb6fa64b4fb98cf5b59035ca055ac45c.glb",
+            "bcd8909772ef7e36607409174f6d172f1b284499.glb",
+            "0fe22147b35e7fff7c5c956c318dc823da8bc1f5.glb",
+            "9bbdc316a168b3e5ca29f06774e03b8f0ecb6337.glb",
+            "dc6d937b90264e990eb29cee1a68425fba2eba05.glb",
+            "d3d5e0f76fa477fdda1a71ea38ece02a2a429b74.glb",
+            "6f54f260a9bfb17f64ea31f343ec464f6e7c320e.glb",
+            "44c30f46c914475f18612f1451734f94e56a5cf8.glb",
+            "5463a9d5f1bf36be4dc9aaec3bd0d357b5bcf575.glb",
+            "3264f5db7d1e009423a820798505478ea56fd695.glb",
+            "bce9dfde1ce3e78bb9a7ca03543b62d617e0a17e.glb"
+          ]
+        },
+        {
+          "socket": 15,
+          "group": "effect",
+          "period": 2.8,
+          "phase": 0.6666666666666666,
+          "frames": [
+            "6b73c87ffdc1f64da952b2cb00d17dd5d5513520.glb",
+            "55c891e6639b7125c26d87ed995be47cd9a36580.glb",
+            "b7d317c1e40537f3d48f75543ec94f5a8eea686f.glb",
+            "8f911400520d88c4bbd63fbc8b26de95ba615c3a.glb",
+            "e48732343e64a93d6ea6f0a6681c72e8e16a5254.glb",
+            "564d5402dedcfd5e7f31985013a637ae845c8057.glb",
+            "ba111f64628ba1f2b1ed500951de6f42f5b85f63.glb",
+            "a52ccc749327c3b7ac344d26477c74bd5ce9c3d7.glb",
+            "fca44930bce518a8be948ced6e895a37051f7824.glb",
+            "f632b328c2a397b63932e33cceb933656528eebd.glb",
+            "f4ab11c8ed72c2897d99053260348193fdd4c325.glb",
+            "6f070aa1bb144908c1e380016f12263ade09b4f4.glb"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "inkcap-scholar",
+      "name": "Inkcap Scholar",
+      "model": "character/v3/Elf/Female/ElfFemale.xml",
+      "colors": [
+        "#c46549",
+        "#364354",
+        "#f7e2bd",
+        "#e3ab63",
+        "#484254"
+      ],
+      "hideSlots": [
+        0,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        26,
+        28
+      ],
+      "geosets": {
+        "8": 8,
+        "9": 1,
+        "5": 5
+      },
+      "atlas": "0eb02f0fdb45ad83cd0aaac9b3696bd37b48f998.png",
+      "attachments": [
+        {
+          "socket": 11,
+          "group": "head",
+          "asset": "a7aa5764942c33617a946b513aced4be88c5f11f.glb"
+        },
+        {
+          "socket": 15,
+          "group": "back",
+          "asset": "1c94d98fa9a6b1268fc28b7183e8f57b839cd609.glb"
+        },
+        {
+          "socket": 15,
+          "group": "trim",
+          "asset": "4385ce70f1641ba1c6c86df3c9aed6ca4fb9db53.glb"
+        }
+      ]
+    },
+    {
+      "id": "clockwork-finch",
+      "name": "Clockwork Finch",
+      "model": "character/v3/Elf/Female/ElfFemale.xml",
+      "colors": [
+        "#bf8650",
+        "#315859",
+        "#f9e2ae",
+        "#71bdb6",
+        "#65413b"
+      ],
+      "hideSlots": [
+        0,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        26,
+        28
+      ],
+      "geosets": {
+        "8": 1,
+        "9": 1,
+        "5": 7
+      },
+      "atlas": "06574059a984fa3c824847168e1cbde0bbe87379.png",
+      "attachments": [
+        {
+          "socket": 11,
+          "group": "head",
+          "asset": "ea8568db340a8748e08a63f8c751b694d3ccf4cc.glb"
+        },
+        {
+          "socket": 15,
+          "group": "back",
+          "asset": "62737ce5de77a9c18bb336d7ac43c18ffa39105b.glb"
+        },
+        {
+          "socket": 15,
+          "group": "trim",
+          "asset": "bc044551848e9f436317e2ac649b54d17430f6c2.glb"
+        }
+      ]
+    },
+    {
+      "id": "snowbell",
+      "name": "Snowbell Dancer",
+      "model": "character/v3/Elf/Female/ElfFemale.xml",
+      "colors": [
+        "#a9def1",
+        "#4775a5",
+        "#fff5eb",
+        "#c7b5ed",
+        "#cbd7e7"
+      ],
+      "hideSlots": [
+        0,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        26,
+        28
+      ],
+      "geosets": {
+        "8": 16,
+        "9": 6,
+        "5": 3
+      },
+      "atlas": "3a82f273c4ac704d76da3f5eea6b74b14402c882.png",
+      "attachments": [
+        {
+          "socket": 11,
+          "group": "head",
+          "asset": "719a253a8a6e2073444ac0d0f62e068c28a90c20.glb"
+        },
+        {
+          "socket": 15,
+          "group": "back",
+          "asset": "95965c45a58e73bae70c80a693e1221099248235.glb"
+        },
+        {
+          "socket": 15,
+          "group": "trim",
+          "asset": "ae838dc0209f8a15c3a1c12d76b7cd78a8c8d453.glb"
+        },
+        {
+          "socket": 15,
+          "group": "effect",
+          "period": 2.8,
+          "phase": 0.0,
+          "frames": [
+            "3cc91a5c2c99449972bf6e5a34670a7827070ac8.glb",
+            "0b222d676d2e9401b90bfa92f248d9545e501784.glb",
+            "a1f13205e8709036201f416f35a0825be0e91673.glb",
+            "8ad6306e6c030b815d6745e5f35e3bb8d4f606f7.glb",
+            "40f22fb6303f215cc456b0beb9c438d8789dd9ee.glb",
+            "1bcc781448fbddbd62d6f16c223abf1cb39c1ebd.glb",
+            "e343f27bcb17679ec1ac578b3dc7043361a1936f.glb",
+            "5f8292d651d2279b5042306908afe1544a9f4a7b.glb",
+            "0ce106fd779b68acc8b439127fff742a2fd52c8b.glb",
+            "9976ca0b9ac879fc9883127cc20f4e7d58638c1c.glb",
+            "b8f6ae807aa4ab835f0c3e3489ab60589a11739b.glb",
+            "da209de9938921b781e816b33020f43617cfb1d4.glb"
+          ]
+        },
+        {
+          "socket": 15,
+          "group": "effect",
+          "period": 2.8,
+          "phase": 0.3333333333333333,
+          "frames": [
+            "8a5215d5a3df714c26d1e53791fd907947881394.glb",
+            "9f0f0dfd849306e0fa4725676383f15535cce321.glb",
+            "48b31a4179674d3cecc7f043f0321db620eb4b15.glb",
+            "cb790fbae4fdb75ce28f6ea1c236bcd3f54a4498.glb",
+            "e1ac4b44d9912bab76a6037e88815b70d099f94f.glb",
+            "5087972013cf6963ec5612b463f9d6a435da7a3e.glb",
+            "bef69da52ab11c6a8a700c0bdf7d4fb4c8dd6d32.glb",
+            "734ecb612534cea7fa36f13083f53be4de0730f9.glb",
+            "ef750d25f680588d1acd4f9e0ba11d6760e5f1e7.glb",
+            "1e307e5b22926dea4951f8bf48d4bcb1da5f2c93.glb",
+            "4a1574b2ea628fbcbe6de3f6936e2791a01782f2.glb",
+            "bcb6c1e8f7e47ca9d6c2f1c8e35948205adc0e35.glb"
+          ]
+        },
+        {
+          "socket": 15,
+          "group": "effect",
+          "period": 2.8,
+          "phase": 0.6666666666666666,
+          "frames": [
+            "1ebeab8141a9ef501d7b2e475a5298d66bf2984b.glb",
+            "db6839987e10813971418127a5791da1077ee018.glb",
+            "8fcc9580e95137bc071eb9313d04ed0d22a395dc.glb",
+            "0406c2ec0314dc8ca268175ea120e1521aef4e27.glb",
+            "9f4ed42df17bdaffe0e7770fb1737e0a52e2ee90.glb",
+            "84b2e599a7dab4f7f52bed862e32002a6c1a750e.glb",
+            "a25f7cca1d8cd1c687789aa9a7b6c07d4bc58ffd.glb",
+            "a53966248ac59ad821340f93fe883773e70e6b96.glb",
+            "24d773643e7954ba894f0cbc9f5229a2124164c5.glb",
+            "cacf4a7963d571b1ba175c198a992542cd82e7f1.glb",
+            "a79aff9c31db819ef0b82ed8d3fa34d4287c421c.glb",
+            "ee15bacaf38f16cedb516fead0f1c3c439ebdf65.glb"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "orbit-cadet",
+      "name": "Orbit Cadet",
+      "model": "character/v3/Elf/Female/ElfFemale.xml",
+      "colors": [
+        "#f48159",
+        "#344367",
+        "#f9efd9",
+        "#74dfdd",
+        "#383e59"
+      ],
+      "hideSlots": [
+        0,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        26,
+        28
+      ],
+      "geosets": {
+        "8": 8,
+        "9": 1,
+        "5": 7
+      },
+      "atlas": "150be9ca10a894a7df80173f6f508ea9b420b36b.png",
+      "attachments": [
+        {
+          "socket": 11,
+          "group": "head",
+          "asset": "b7789e08103507b3e4a3c867aee15380a6294e11.glb"
+        },
+        {
+          "socket": 15,
+          "group": "back",
+          "asset": "ef9bedfe53367920f8c9bd890f81572704e22131.glb"
+        },
+        {
+          "socket": 15,
+          "group": "trim",
+          "asset": "a2e5dacdc2a866555a41ad4f47fdff71ad083535.glb"
+        }
+      ]
+    },
+    {
+      "id": "sakura-letter",
+      "name": "Sakura Letter",
+      "model": "character/v3/Elf/Female/ElfFemale.xml",
+      "colors": [
+        "#eba0ac",
+        "#67496e",
+        "#fff0d7",
+        "#d67876",
+        "#443749"
+      ],
+      "hideSlots": [
+        0,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        26,
+        28
+      ],
+      "geosets": {
+        "8": 8,
+        "9": 6,
+        "5": 1
+      },
+      "atlas": "60192b4a4249ab5bb2c60b5c299e6399bfb12ac7.png",
+      "attachments": [
+        {
+          "socket": 11,
+          "group": "head",
+          "asset": "04a5eeaaad182295646c097fe0af91137497e735.glb"
+        },
+        {
+          "socket": 15,
+          "group": "back",
+          "asset": "a7e74ecb83334ed1fa964a4b6b2da7530628478a.glb"
+        },
+        {
+          "socket": 15,
+          "group": "trim",
+          "asset": "33d5b69e431505aa05713af865108f94db0dce3f.glb"
+        }
+      ]
+    },
+    {
+      "id": "lantern-keeper",
+      "name": "Lantern Keeper",
+      "model": "character/v3/Elf/Female/ElfFemale.xml",
+      "colors": [
+        "#278d85",
+        "#30395d",
+        "#ffe6b0",
+        "#ff9357",
+        "#433956"
+      ],
+      "hideSlots": [
+        0,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        26,
+        28
+      ],
+      "geosets": {
+        "8": 8,
+        "9": 3,
+        "5": 7
+      },
+      "atlas": "9b1d30381d8688ff194b0d7d4e768b82c763e554.png",
+      "attachments": [
+        {
+          "socket": 11,
+          "group": "head",
+          "asset": "f6c376ef53d6420552ff866b991dc1f110d1ed24.glb"
+        },
+        {
+          "socket": 15,
+          "group": "back",
+          "asset": "23703a2992b6b604b6dd2ab5ba1db13f215b028d.glb"
+        },
+        {
+          "socket": 15,
+          "group": "trim",
+          "asset": "bbd2413e15aba6e273ec5f1674b2123643b13274.glb"
+        }
+      ]
+    },
+    {
+      "id": "tide-conductor",
+      "name": "Tide Conductor",
+      "model": "character/v3/Elf/Female/ElfFemale.xml",
+      "colors": [
+        "#687cbc",
+        "#235368",
+        "#dcf3e4",
+        "#faab8b",
+        "#37536d"
+      ],
+      "hideSlots": [
+        0,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        26,
+        28
+      ],
+      "geosets": {
+        "8": 1,
+        "9": 6,
+        "5": 1
+      },
+      "atlas": "18b0e8aa8a3f378b960b35cbd66c8d3466e16fc2.png",
+      "attachments": [
+        {
+          "socket": 11,
+          "group": "head",
+          "asset": "d82e428c834da78c349086fd1a766ae5c855f157.glb"
+        },
+        {
+          "socket": 15,
+          "group": "back",
+          "asset": "018b27a64e917b6e6814301476a673ddca41b6ad.glb"
+        },
+        {
+          "socket": 15,
+          "group": "trim",
+          "asset": "028d4f4579e8a9de67e7783c59a041a87c8920d2.glb"
+        }
+      ]
+    },
+    {
+      "id": "pumpkin-page",
+      "name": "Pumpkin Page",
+      "model": "character/v3/Elf/Female/ElfFemale.xml",
+      "colors": [
+        "#ef8840",
+        "#455641",
+        "#ffe3a7",
+        "#97b360",
+        "#713f42"
+      ],
+      "hideSlots": [
+        0,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        26,
+        28
+      ],
+      "geosets": {
+        "8": 1,
+        "9": 3,
+        "5": 5
+      },
+      "atlas": "68dad9660008f23b3b14b9e6b659bddf72b46b99.png",
+      "attachments": [
+        {
+          "socket": 11,
+          "group": "head",
+          "asset": "189ef5d793a21a913ec1706f0166dd2d29627d57.glb"
+        },
+        {
+          "socket": 15,
+          "group": "back",
+          "asset": "cd8949f915100fd1e744603b5190f90815ccb8f2.glb"
+        },
+        {
+          "socket": 15,
+          "group": "trim",
+          "asset": "f6229b00391d6edc38d765f471944a2b518b40a2.glb"
+        }
+      ]
+    },
+    {
+      "id": "kitewright",
+      "name": "Festival Kitewright",
+      "model": "character/v3/Elf/Female/ElfFemale.xml",
+      "colors": [
+        "#de5658",
+        "#315593",
+        "#ffedbd",
+        "#f4b64a",
+        "#343b4f"
+      ],
+      "hideSlots": [
+        0,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        26,
+        28
+      ],
+      "geosets": {
+        "8": 8,
+        "9": 1,
+        "5": 3
+      },
+      "atlas": "c92d588579d8ac75be19a690e23caf1ce7fa1fce.png",
+      "attachments": [
+        {
+          "socket": 11,
+          "group": "head",
+          "asset": "27731b8e76afaab83830becff962e69322e1a480.glb"
+        },
+        {
+          "socket": 15,
+          "group": "back",
+          "asset": "1fb6410c8a362547ab497d8a9a623da6b2b03d99.glb"
+        },
+        {
+          "socket": 15,
+          "group": "trim",
+          "asset": "17c76d88959908c5b82f5ebd291d364819428190.glb"
+        }
+      ]
+    },
+    {
+      "id": "lemon-fizz",
+      "name": "Lemon Fizz",
+      "model": "character/v3/Elf/Female/ElfFemale.xml",
+      "colors": [
+        "#f2ce48",
+        "#448b80",
+        "#fffae2",
+        "#eda7a0",
+        "#ad8053"
+      ],
+      "hideSlots": [
+        0,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        26,
+        28
+      ],
+      "geosets": {
+        "8": 16,
+        "9": 6,
+        "5": 1
+      },
+      "atlas": "81e4bb97299e3ea1c4f0b891467d7c8a5673c74e.png",
+      "attachments": [
+        {
+          "socket": 11,
+          "group": "head",
+          "asset": "65ac83f79a709c610342a8f2aafe878d23ddf1c4.glb"
+        },
+        {
+          "socket": 15,
+          "group": "back",
+          "asset": "d63a1af9849e87730ba6ba58c6ec20435f433942.glb"
+        },
+        {
+          "socket": 15,
+          "group": "trim",
+          "asset": "c7efe8af3825394f923f39f3fa61a25fad5aaa08.glb"
+        }
+      ]
+    },
+    {
+      "id": "velvet-jester",
+      "name": "Velvet Jester",
+      "model": "character/v3/Elf/Female/ElfFemale.xml",
+      "colors": [
+        "#a04e83",
+        "#314673",
+        "#ffdf9d",
+        "#eb8775",
+        "#40364d"
+      ],
+      "hideSlots": [
+        0,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        26,
+        28
+      ],
+      "geosets": {
+        "8": 8,
+        "9": 3,
+        "5": 3
+      },
+      "atlas": "82e32b627da03cfbcb8b62e8c2c94bc71468d2fd.png",
+      "attachments": [
+        {
+          "socket": 11,
+          "group": "head",
+          "asset": "6c492b60c7c978fcbdca882487cab8864896f002.glb"
+        },
+        {
+          "socket": 15,
+          "group": "back",
+          "asset": "282daabe27bae271599943590c37e859d43da8a5.glb"
+        },
+        {
+          "socket": 15,
+          "group": "trim",
+          "asset": "6c4c38f91a2489e6dfd3267c4f6efc6eded9fe22.glb"
+        }
+      ]
+    },
+    {
+      "id": "desert-stargazer",
+      "name": "Desert Stargazer",
+      "model": "character/v3/Elf/Female/ElfFemale.xml",
+      "colors": [
+        "#3e7897",
+        "#323556",
+        "#f3c26b",
+        "#e18e77",
+        "#493747"
+      ],
+      "hideSlots": [
+        0,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        26,
+        28
+      ],
+      "geosets": {
+        "8": 8,
+        "9": 3,
+        "5": 7
+      },
+      "atlas": "d230181b070c82126332f5133043dfda63937d29.png",
+      "attachments": [
+        {
+          "socket": 11,
+          "group": "head",
+          "asset": "e67ebc7b122d37f63ee178af0dd42ecd22f6d3db.glb"
+        },
+        {
+          "socket": 15,
+          "group": "back",
+          "asset": "49059c62fce5ddc91241415caf6e80befcc31194.glb"
+        },
+        {
+          "socket": 15,
+          "group": "trim",
+          "asset": "75900ee64fe459cb28213c34741dad891728eb4a.glb"
+        }
+      ]
+    },
+    {
+      "id": "aurora-weaver",
+      "name": "Aurora Weaver",
+      "model": "character/v3/Elf/Female/ElfFemale.xml",
+      "colors": [
+        "#75b9ac",
+        "#544780",
+        "#f7eaf2",
+        "#df9ebf",
+        "#9895bb"
+      ],
+      "hideSlots": [
+        0,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        26,
+        28
+      ],
+      "geosets": {
+        "8": 16,
+        "9": 6,
+        "5": 7
+      },
+      "atlas": "4d8b82086f186e063c2ac63d7de13f01c3d77d9a.png",
+      "attachments": [
+        {
+          "socket": 11,
+          "group": "head",
+          "asset": "581ac330cf8925ce228d11f97ceb9e87d23468f6.glb"
+        },
+        {
+          "socket": 15,
+          "group": "back",
+          "asset": "14c3e6dbf85b19bde0911bab8230af87eadac485.glb"
+        },
+        {
+          "socket": 15,
+          "group": "trim",
+          "asset": "3c07edb961921e153f8e49e1825b4e24f7fd5705.glb"
+        },
+        {
+          "socket": 15,
+          "group": "effect",
+          "period": 2.8,
+          "phase": 0.0,
+          "frames": [
+            "72138661584bb2edf29c0697a1bfc93a8fcd66c6.glb",
+            "7c17adfbcba17a07e43bf4e8d1f9bf0cf14faad6.glb",
+            "ed4aaab72f304dd0d2950ea0b767a8ab2600e812.glb",
+            "06b655bbe322c86c6b733e276ddb4fec2d067803.glb",
+            "c08638e40ff32c1f9686f4513fb2655b142f2b35.glb",
+            "07169a504eea8e88a3a21d23e4a2001bbe720c61.glb",
+            "e2f9b1310f878f6860f3ef0d7ebb4b6b15c2ec12.glb",
+            "7ca54d0bdfaaeaa5f1d0c5899df7405e5571ba00.glb",
+            "8cfff03eec2b4a36ec69cf7c9e50fb80a58279f5.glb",
+            "a76cf60ca9e8f183b3a90c3e5016616b17e5201d.glb",
+            "663da086b4a2c77bf65d98f11b68625a579507bb.glb",
+            "eb3f385b71d315e1caafe685750474665ef2f46a.glb"
+          ]
+        },
+        {
+          "socket": 15,
+          "group": "effect",
+          "period": 2.8,
+          "phase": 0.3333333333333333,
+          "frames": [
+            "fdcb4b2776cecd8500e9a335353bf449339859af.glb",
+            "2a925afc854008b432ab784a32837f8e6e0ef766.glb",
+            "da246cf2f17ab6dfc93f67632a56bfe54160d659.glb",
+            "4cc24948f75d5a770e2d9a4671571b67ed0fc1f2.glb",
+            "0d35a08b99f89b3f78631d35985e1ba1459c4078.glb",
+            "07f98b9fd36e4a8fa95d746a44c74e888df6a71b.glb",
+            "03e7e60d750b17eabe0b57ccbd505be989ef3ccf.glb",
+            "992020d66f766b92d466667c3511c7e5865f29a4.glb",
+            "f27daceee7a005edf6413f2d448a5363d6f83e53.glb",
+            "492672b4a626606f18e516591361af905a7b04a1.glb",
+            "0991b9b563b30ee640274b670a1960dc63988bee.glb",
+            "199aed9b7a2a0a8f016c0080ec5028c813e5dc20.glb"
+          ]
+        },
+        {
+          "socket": 15,
+          "group": "effect",
+          "period": 2.8,
+          "phase": 0.6666666666666666,
+          "frames": [
+            "0fba4b81f42511af5f8a3338028aeea832502041.glb",
+            "7ad49fb830a3a1c17733253d432929446f666def.glb",
+            "cbbd1ee93b7c8acdf70025a37e71f7aa0466b02d.glb",
+            "6cac0c4390733959b8aca62f30bb60260a558212.glb",
+            "d9209ec833181267e9408a3fd7fb3f3f0bea70ad.glb",
+            "bcd3441b93e11a90a604391a9a7b47a516627527.glb",
+            "ffd702e04ab489e91845cd3f2e335f7e97963e6a.glb",
+            "137b54b295b89171974ca7ce248907a73e54edb4.glb",
+            "9c0e20a1252197482393b0bb3b5bb3f35207a856.glb",
+            "7bb1d08dae8cbee34cf71ea6cca9164210637af4.glb",
+            "8cfd35692836dd37c1878c096b597b36fa1d3986.glb",
+            "f154163ef6dbf4060f439cbefb07d2332a485789.glb"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "deepseek-whale-maid",
+      "name": "蓝色大肥鱼",
+      "model": "character/v3/Elf/Female/ElfFemale.xml",
+      "colors": [
+        "#283e86",
+        "#4269ba",
+        "#fff9ef",
+        "#75c9f4",
+        "#172552"
+      ],
+      "hideSlots": [
+        0,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        26,
+        28
+      ],
+      "geosets": {
+        "8": 16,
+        "9": 1,
+        "5": 1
+      },
+      "atlas": "3c11ce55f83e4106f10dae9f60667041bf61e3f9.png",
+      "attachments": [
+        {
+          "socket": 11,
+          "coversHair": true,
+          "coversEars": true,
+          "group": "head",
+          "asset": "16e127989625f1c037467a02ab0463421cc814b1.glb"
+        },
+        {
+          "socket": 15,
+          "group": "trim",
+          "asset": "02aee285a11571355b08c47ee600ad21aa683806.glb"
+        },
+        {
+          "socket": 15,
+          "group": "back",
+          "asset": "e60b6454fc7358041f9a6984da97067c7faf095b.glb"
+        }
+      ]
+    }
+  ]
+}
